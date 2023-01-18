@@ -12,10 +12,8 @@ router.register(
 )
 router.register('posts', PostViewSet, basename='posts')
 router.register('groups', GroupViewSet, basename='groups')
+router.register('follow', FollowViewSet, basename='follow')
 urlpatterns = [
-    path('v1/follow/', FollowViewSet.as_view({'post': 'create',
-                                              'get': 'list',
-                                              'delete': 'destroy'})),
     path('v1/', include(router.urls)),
     path('v1/', include('djoser.urls')),
     path('v1/', include('djoser.urls.jwt')),
