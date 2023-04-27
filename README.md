@@ -13,7 +13,7 @@ Yatube - это социальная сеть для публикации сво
 
 ### Технологии:
 
-Python | Django REST Framework | Simple JWT
+Python 3.7 | Django 3.2.16 | Django REST Framework 3.12.4 | Simple JWT 4.7.2
 
 
 ### Как запустить проект:
